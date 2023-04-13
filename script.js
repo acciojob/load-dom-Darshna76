@@ -1,7 +1,5 @@
 //your JS code here. If required.
-document.addEventListener('DOMContentLoaded', function() {
-  const message = 'DOM load success';
-  const p = document.createElement('p');
-  p.textContent = message;
-  document.body.appendChild(p);
+var loading=document.getElementByTagName("body");
+loading.addEventListener(load, function() {
+  loading.innerHtml="<p>DOM load success</p>"
 });
