@@ -1,5 +1,4 @@
-//your JS code here. If required.
-var loading=document.getElementByTagName("body");
-loading.addEventListener(load, function() {
-  loading.innerHtml="<p>DOM load success</p>"
+document.addEventListener("DOMContentLoaded", function() {
+  // This function will be called when the DOM is loaded
+  document.body.textContent = "DOM load success";
 });
